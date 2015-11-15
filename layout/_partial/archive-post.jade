@@ -1,0 +1,10 @@
+h2.u-s-mb-tiny
+    !=partial('post/title')
+p.u-text-color-trivial.u-text-size-x-small
+    !=partial('post/date', {date_format: 'MM-DD HH:mm'})
+    !=partial('post/category')
+    !=partial('post/tag')
+if post.link
+    a(href!=url_for(post.link) target="_blank")
+else
+    a(href!=url_for(post.path))

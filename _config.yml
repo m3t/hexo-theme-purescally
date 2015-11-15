@@ -1,0 +1,34 @@
+#email: # used for gravatar
+# if you copy an avatar file to ./source folder,
+# just uncomment the variable below,
+# and replace "avatar.png" to your image name.
+# better to use 48x48 pixels.
+#avatar: avatar.png
+
+# menu buttons in header
+menu:
+  archives: /archives
+  about: /about
+  contact: /contact
+
+excerpt_link: Read More
+
+# comments system
+# disqus always goes first once configured
+#disqus_shortname:
+#duoshuo_shortname:
+
+# social links
+socialmedia: true
+github: m3t
+#gplus:
+#twitter:
+
+# google analytics
+#google_analytics:
+
+# Code Highlight theme
+# Available value:
+#    normal | night | night eighties | night blue | night bright
+# https://github.com/chriskempson/tomorrow-theme
+highlight_theme: night

@@ -1,0 +1,16 @@
+meta(charset='utf-8')
+meta(http-equiv='x-ua-compatible', content='ie=edge')
+title #{config.title}
+meta(name='description', content='#{config.description}')
+if page.keywords
+    meta(name='keywords', content='#{page.keywords}')
+meta(name='viewport', content='width=device-width, initial-scale=1')
+meta(name='robots', content='noindex,nofollow')
+meta(name='alternate', type='application/atom+xml', title='Atom', href='/atom.xml')
+link(rel='sitemap', type='application/xml', title='Sitemap', href='/sitemap.xml')
+!=css(['stylesheets/main', 'stylesheets/hexo'])
+!=js(['javascripts/main.js'])
+
+| <!--[if (gte IE 6)&(lte IE 8)]>
+|    <script type="text/javascript" src="javascripts/ie.js"></script>
+| <![endif]-->

@@ -1,0 +1,12 @@
+.c-button {
+  text-transform: uppercase;
+
+  // Apply hover/focus styles
+  @if $c-button-apply-hover-styles {
+    &:hover,
+    &:focus {
+      opacity: 1.0;
+      border-color: $color-state-information;
+    }
+  }
+}

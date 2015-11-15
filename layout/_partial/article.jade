@@ -1,0 +1,27 @@
+section(data-ui-component='post').u-s-mb-huge
+    div(data-ui-component='post-meta')
+        !=partial('post/avatar')
+        if post.link || post.title
+            h2.u-s-mb-tiny
+                !=partial('post/title')
+            p.u-text-color-trivial.u-text-size-x-small
+                !=partial('post/date', {date_format: 'YYYY-MM-DD HH:mm'})
+                !=partial('post/category')
+                !=partial('post/tag')
+    hr
+    div(data-ui-component='post-content').u-s-me-tiny.post-content
+        !=partial('post/gallery')
+        if post.excerpt && index
+            !=post.excerpt
+            if theme.excerpt_link
+                p.post-excerpt-link
+                    a(href!=url_for(post.path)+ "#more") #{theme.excerpt_link}
+        else
+            !=post.content
+    if !index
+        !=partial('post/nav')
+    if !index && post.comments
+        if theme.disqus_shortname
+            #disqus_thread
+        else if theme.duoshuo_shortname
+            .ds-thread(data-thread-key="#{post.layout}-#{post.slug}" data-title=post.title data-url=post.permalink)

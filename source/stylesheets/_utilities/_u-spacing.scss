@@ -1,0 +1,17 @@
+/* ============================================================================
+   @UTILITIES -> SPACING
+   ========================================================================= */
+
+   @include generate-percentage-classes-at-breakpoints(
+     $u-spacing-apply-at-breakpoints,
+     $scally-type: "u",
+     $class-name: "s-ml",
+     $css-property: "margin-left"
+   );
+
+   @include generate-percentage-classes-at-breakpoints(
+     $u-spacing-apply-at-breakpoints,
+     $scally-type: "u",
+     $class-name: "s-mt",
+     $css-property: "margin-top"
+   );

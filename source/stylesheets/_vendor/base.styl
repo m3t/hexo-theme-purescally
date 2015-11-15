@@ -1,0 +1,65 @@
+//
+// https://github.com/iissnan/hexo-theme-next/blob/master/source/css/_common/_core/base.styl
+//
+
+
+// https://hexo.io/docs/tag-plugins.html#Block_Quote
+// https://github.com/hexojs/hexo/blob/master/lib/plugins/tag/blockquote.js
+
+blockquote {
+  padding: 0 15px;
+  color: $grey-dim;
+  border-left: 4px solid $gray-lighter;
+
+  cite::before {
+    content: "-";
+    padding: 0 5px;
+  }
+}
+
+.pullquote {
+  width: 45%;
+  &.left {
+    float: left;
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+  &.right {
+    float: right;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+}
+
+.highlight table, .gist table {
+  width: auto;
+  td {
+    border: none;
+  }
+
+}
+.highlight, .gist {
+  a {
+    color: $link-hover-color !important;
+    text-decoration: none !important;
+  }
+}
+
+
+// https://hexo.io/docs/tag-plugins.html#Youtube
+// https://github.com/hexojs/hexo/blob/master/lib/plugins/tag/youtube.js
+// https://github.com/hexojs/hexo/blob/master/lib/plugins/tag/vimeo.js
+
+.video-container {
+  position: relative;
+  padding-top: 60%;
+  height: 0;
+  overflow: hidden;
+  iframe, object, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

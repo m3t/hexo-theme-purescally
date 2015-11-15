@@ -1,0 +1,7 @@
+if (post.categories && post.categories.length)
+    span.u-s-mr-base.u-hide-up-to-lap-large
+        !=partial('../svg', {title: 'categories', desc: 'categories icon', href: '/images/sprites.svg#books'})
+        span.c-button-group
+            - post.categories.each(function (category) {
+                a(href!=url_for(category.path)).c-button.c-button--secondary.c-button--tiny #{category.name}
+            - })

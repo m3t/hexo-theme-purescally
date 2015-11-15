@@ -1,0 +1,24 @@
+if post.prev || post.next
+    hr
+    nav(role='navigation').c-nav-post
+        .l-side-by-side.l-side-by-side--remove
+            .l-side-by-side__left
+                .c-nav-post__prev
+                    if post.prev
+                        a(href!=url_for(post.prev.path))
+                            span.c-nav-post__arrow.c-nav-post__arrow--left
+                            span.c-nav-post__title
+                                if post.prev.title
+                                    =post.prev.title
+                                else
+                                    |(no title)
+            .l-side-by-side__right
+                .c-nav-post__next
+                    if post.next
+                        a(href!=url_for(post.next.path))
+                            span.c-nav-post__title
+                                if post.next.title
+                                    =post.next.title
+                                else
+                                    |(no title)
+                            span.c-nav-post__arrow.c-nav-post__arrow--right

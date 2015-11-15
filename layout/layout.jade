@@ -1,0 +1,19 @@
+doctype html
+html(lang='en')
+    head
+        !=partial('_partial/head')
+    body
+        .l-container.l-container--full-bleed
+            .l-grid.l-grid--gutterless
+
+                div(data-ui-component='sidebar').l-grid__item.u-one-third-from-lap.u-position-fixed-pin-ends-from-lap.background-primary.u-overflow-y-auto
+                    header(data-ui-component='header', role='banner').u-s-mt-seven-tenths-from-lap.u-text-align-center-up-to-lap.u-text-align-right-from-lap.u-s-me-huge-up-to-lap.u-s-mr-huge-from-lap
+                        !=partial('_partial/header')
+
+                div(data-ui-component='content').l-grid__item.u-two-thirds-from-lap.u-s-ml-one-third-from-lap
+                    main(data-ui-component='posts', role='main').u-s-mt-large.u-s-ms-huge
+                        !=body
+                    footer(data-ui-component='footer', role='contentinfo').u-s-me-huge.u-text-align-center.u-text-color-trivial
+                        !=partial('_partial/footer')
+
+                    !=partial('_partial/after-footer')

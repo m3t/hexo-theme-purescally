@@ -1,0 +1,24 @@
+{
+  "name": "hexo-theme-purescally",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "postinstall": "bower install && npm run modernizr",
+    "modernizr": "modernizr --config modernizr-config.json --dest source/vendors/",
+    "polyfills": "cd source/javascripts/polyfills/ && python3.5 build.py",
+    "svgSprite": "gulp svgSprite"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-cheerio": "^0.6.2",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-svg2png": "^0.3.0",
+    "gulp-svgstore": "^5.0.5"
+  },
+  "dependencies": {
+    "bower": "^1.6.3",
+    "modernizr": "^3.1.0",
+    "scally": "^2.10.1"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "hexo-theme-purescally",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "source/vendors",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "svg4everybody": "~2.0.0",
+    "respond": "respondJs#~1.4.2",
+    "nwmatcher": "1.3.4",
+    "selectivizr": "~1.0.2",
+    "html5shiv": "~3.7.3",
+    "REM-unit-polyfill": "~1.3.4",
+    "yepnope": "~2.0.0",
+    "borderBoxModel": "https://github.com/albertogasparin/borderBoxModel.git"
+  },
+  "private": true
+}

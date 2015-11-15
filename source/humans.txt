@@ -1,0 +1,10 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    m3t (96bd6c8bb869fe632b3650fb7156c797ef8c2a055d31dde634565f3edda485b) <mlt [at] posteo [dot] de>
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5

@@ -1,0 +1,17 @@
+if theme.socialmedia
+    div(data-ui-component='socialmedia').u-s-mb-tiny
+        a(href='https://github.com/' + (theme.github ? theme.github : ""), target="_blank")
+            !=partial('svg', {title: 'github', desc: 'github icon', href: '/images/sprites.svg#github'})
+        a(href='http://www.catb.org/hacker-emblem/', target='_blank')
+            !=partial('svg', {title: 'hacker', desc: 'hacker emblem', href: '/images/sprites.svg#hacker'})
+        //-a(href='https://plus.google.com/' + (theme.gplus ? theme.gplus : ""), target="_blank")
+            //-!=partial('svg', {title: 'google-plus', desc: 'google-plus icon', href: '/images/sprites.svg#google-plus'})
+        //-a(href='https://twitter.com/' + (theme.twitter ? theme.twitter : ""), target="_blank")
+            //-!=partial('svg', {title: 'twitter', desc: 'twitter icon', href: '/images/sprites.svg#twitter'})
+        p.u-s-mt-tiny make love not facebook
+div(data-ui-component='copyright')
+    small
+        | Copyright &copy; <time datetime="#{date(new Date(), 'YYYY')}">#{date(new Date(), 'YYYY')}</time> #{theme.author}.
+        | All content is <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="blank">cc-by-sa</a> unless otherwise noted.
+        | <br>Powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+        | using <a href="https://github.com/chris-pearce/scally" target="_blank">Scally</a> framework.

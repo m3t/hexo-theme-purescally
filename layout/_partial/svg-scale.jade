@@ -1,0 +1,7 @@
+// Scale SVG
+.svg__ph
+    svg(class='svg__auto', width='100%', preserveAspectRatio='xMidYMin slice', role='img', aria-labelledby='title desc')
+        title(id='title')!= title
+        desc(id='desc')!= desc
+        use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href!=href)
+

@@ -1,0 +1,57 @@
+/* ============================================================================
+   @COMPONENTS -> NAV POST
+   ========================================================================= */
+
+
+/**
+ * Pagination component rendered as an inline list.
+ */
+
+
+/**
+ * Settings.
+ */
+
+$c-nav-post-apply-linear:       true !default;
+
+// At what breakpoint to make linear? Can be one of the main breakpoints or any
+// integer
+// N.B. served via a `min-width` media query
+$c-nav-post-apply-linear-when:  palm !default;
+
+
+.c-nav-post {
+  text-align: center;
+}
+
+  .c-nav-post__prev {
+
+  }
+
+  .c-nav-post__next {
+    @if $c-nav-post-apply-linear {
+      @include respond-to($c-nav-post-apply-linear-when, min) {
+        text-align: right;
+      }
+    }
+  }
+
+    .c-nav-post__title {
+      color: $color-black;
+      vertical-align: middle;
+    }
+
+    .c-nav-post__arrow {
+      @extend %o-arrow;
+      @extend %o-arrow--large;
+    }
+
+      .c-nav-post__arrow--left {
+        @extend %o-arrow--left;
+        @include to-rem(margin-right, $spacing-third);
+      }
+
+      .c-nav-post__arrow--right {
+        @extend %o-arrow--right;
+        @include to-rem(margin-left, $spacing-third);
+      }

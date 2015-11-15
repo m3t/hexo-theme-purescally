@@ -1,0 +1,4 @@
+if theme.avatar
+    img.u-float-right.border-radius(height="48" width="48" src!=url_for(theme.avatar))
+else if theme.email
+    img.u-float-right.border-radius(height="48" width="48" src!=gravatar(theme.email, 48))

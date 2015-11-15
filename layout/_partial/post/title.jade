@@ -1,0 +1,10 @@
+if post.link
+    a(href!=url_for(post.link) target="_blank").u-text-color-black #{post.title}
+else
+    if post.title
+        if index
+            a(href!=url_for(post.path)).u-text-color-black #{post.title}
+        else
+            =post.title
+    else
+        a(href!=url_for(post.path)).u-text-color-black (no title)

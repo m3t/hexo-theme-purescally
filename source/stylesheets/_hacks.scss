@@ -1,0 +1,28 @@
+/*------------------------------------*\
+    #SVG HACKS
+\*------------------------------------*/
+
+/*
+ * How to scale SVG
+ * https://css-tricks.com/scale-svg/
+ * https://svgwg.org/svg2-draft/struct.html#SVGElementWidthAttribute
+ * Option 4: Use the padding-bottom Hack on a Container
+ *
+ * 1. Override this inline for aspect ratio other than square
+ */
+
+.svg__ph {
+    position: relative; 
+    height: 0; 
+    width: 100%; 
+    padding: 0;
+    padding-bottom: 100%;  /* [1] */ 
+}
+
+    .svg__auto {
+        position: absolute; 
+        height: 100%; 
+        width: 100%; 
+        left: 0; 
+        top: 0;
+    }

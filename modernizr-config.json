@@ -1,0 +1,11 @@
+{
+  "minify": false,
+  "options": [],
+  "feature-detects": [
+    "test/css/boxsizing",
+    "test/css/mediaqueries",
+    "test/css/remunit",
+    "test/elem/unknown",
+    "test/svg/inline"
+  ]
+}

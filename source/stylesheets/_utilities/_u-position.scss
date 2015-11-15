@@ -1,0 +1,38 @@
+/* ============================================================================
+   @UTILITIES -> POSITION
+   ========================================================================= */
+
+
+/**
+ * Various utilities for positioning elements.
+ *
+ * All the utilities (available as silent placeholder selectors also):
+ *
+   .u-position-fixed-pin-ends
+ */
+
+
+/**
+ * Settings.
+ */
+
+
+
+/**
+ * Different ways to position an element.
+ */
+
+// Pin to top and bottom
+%u-position-fixed-pin-ends,
+.u-position-fixed-pin-ends {
+  position: fixed !important;
+  top: 0 !important;
+  bottom: 0 !important;
+}
+
+@include generate-at-breakpoints('.u-position-fixed-pin-ends',
+    $u-position-apply-at-breakpoints) {
+    position: fixed !important;
+    top: 0 !important;
+    bottom: 0 !important;
+}

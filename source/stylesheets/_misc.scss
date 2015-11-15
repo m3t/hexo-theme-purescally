@@ -1,0 +1,41 @@
+// Utilities: One-line declarations
+.border-radius { border-radius: $border-radius !important; }
+.u-text-color-white { color: $color-white !important; }
+.u-text-color-black { color: $color-black !important; }
+.u-text-color-trivial { color: $color-trivial !important; }
+.u-text-color-secondary { color: $color-secondary !important; }
+
+
+
+.background-primary {
+  // fallback
+  background-color: $color-primary;
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients
+
+  background-image:
+    linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.5) 80%,
+    rgba(255,255,255,1)),
+    url(../images/lookout.jpg);
+  background-size: cover;
+  background-position: 100% 70%;
+
+  @include respond-to(lap) {
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.5) 70%,
+      rgba(255,255,255,1)),
+      url(../images/rocknroll.jpg);
+    background-size: cover;
+    background-position: 0% 88%;
+  }
+}
+
+// Icon
+.icon--tiny {
+  width: 16px;
+  height: 16px;
+}
+
+.icon--small {
+  width: 32px;
+  height: 32px;
+}

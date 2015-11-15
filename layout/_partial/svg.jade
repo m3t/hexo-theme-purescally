@@ -1,0 +1,8 @@
+//-http://stackoverflow.com/a/11015303
+if !locals.xclass
+    - var xclass = 'icon--small'
+svg(class!=locals.xclass, class!=xclass, class='u-display-inline-block u-s-ms-tiny', role='img', aria-labelledby='title desc')
+    title(id='title')!=title
+    desc(id='desc')!=desc
+    use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href!=href)
+
