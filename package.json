@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "postinstall": "bower install && npm run modernizr",
+    "postinstall": "bower install && npm run modernizr && npm run polyfills",
     "modernizr": "modernizr --config modernizr-config.json --dest source/vendors/",
     "polyfills": "cd source/javascripts/polyfills/ && python3.5 build.py",
     "svgSprite": "gulp svgSprite"
