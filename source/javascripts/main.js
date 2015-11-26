@@ -22,7 +22,7 @@ yepnope.urlFormatter = function(url, tests) {
 };
 
 // A request for polyfills-[nope]-[nope2].js would be made
-yepnope('polyfills/polyfills.js', {
+yepnope('/javascripts/polyfills/polyfills.js', {
   boxsizing: Modernizr.boxsizing,
   mediaqueries: Modernizr.mediaqueries,
   cssunits: Modernizr.cssremunit,
