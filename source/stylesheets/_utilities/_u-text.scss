@@ -1,0 +1,10 @@
+/* ============================================================================
+   @UTILITIES -> TEXT
+   ========================================================================= */
+
+  .u-text-stroke-trivial { @include stroke(1, $color-trivial); }
+
+  @include generate-at-breakpoints('.u-text-stroke-trivial',
+    $u-text-apply-at-breakpoints) {
+      @include stroke(1, $color-trivial);
+  }
