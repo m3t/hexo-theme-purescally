@@ -6,7 +6,9 @@
     &:hover,
     &:focus {
       opacity: 1.0;
+      color: $color-state-information;
       border-color: $color-state-information;
+      text-shadow: unset;
     }
   }
 }
