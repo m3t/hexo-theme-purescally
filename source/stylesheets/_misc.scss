@@ -4,8 +4,7 @@
 .u-text-color-black { color: $color-black !important; }
 .u-text-color-trivial { color: $color-trivial !important; }
 .u-text-color-secondary { color: $color-secondary !important; }
-
-
+.u-s-letter-micro { @include to-rem(letter-spacing, 2 * $u-spacing-micro, !important); }
 
 .background-primary {
   // fallback
