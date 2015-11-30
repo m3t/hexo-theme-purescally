@@ -1,5 +1,5 @@
 h1.u-s-mb-none
-    a(href!=url_for()).u-text-color-white #{config.title}
+    a(href!=url_for()) #{config.title}
 
 h3.u-s-mt-none.u-text-color-secondary #{config.subtitle}
 
@@ -7,5 +7,5 @@ nav(role='navigation')
     ul(data-ui-component='nav-main').o-list-inline.o-list-inline--spacing-small
         each path, name in theme.menu
             li
-                a(href!=url_for(path)).c-button.c-button--small.u-s-mt-small #{name}
+                a(href!=url_for(path)).c-button.c-button--small.u-s-mt-small.u-text-stroke-trivial-up-to-lap.u-s-letter-micro #{name}
 

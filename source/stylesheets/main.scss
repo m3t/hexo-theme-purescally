@@ -20,6 +20,7 @@
 $color-brand: rgb(61, 79, 93);
 $color-primary: $color-brand;
 $color-secondary: rgb(176, 202, 219);
+$color-secondary: darken($color-secondary, 12%);
 // $color-secondary: lighten($color-brand, 10%);
 @import "../../node_modules/scally/core/settings/colours";
 $color-trivial: lighten($color-black, 50%);
@@ -59,6 +60,8 @@ $color-trivial: lighten($color-black, 50%);
 @import "../../node_modules/scally/core/mixins/target-headings";
 
 @import "../../node_modules/scally/core/mixins/text-input-placeholder-colour.scss";
+
+@import "_core/mixins/text-stroke";
 
 // Normalize
 @import "../../node_modules/scally/core/normalize";
@@ -179,6 +182,7 @@ $u-text-apply-at-breakpoints: (lap, lap max);
 $u-text-apply-at-breakpoints-for-align-center: true;
 $u-text-apply-at-breakpoints-for-align-right: true;
 @import "../../node_modules/scally/utilities/u-text";
+@import "_utilities/u-text";
 
 @import "../../node_modules/scally/utilities/u-widths";
 
