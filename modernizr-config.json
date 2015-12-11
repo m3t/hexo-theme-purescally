@@ -6,6 +6,7 @@
     "test/css/mediaqueries",
     "test/css/remunit",
     "test/elem/unknown",
+    "test/es6/promises",
     "test/svg/inline"
   ]
 }

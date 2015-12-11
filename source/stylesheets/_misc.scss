@@ -38,3 +38,16 @@
   width: 32px;
   height: 32px;
 }
+
+// main.js: Font Face Observer
+.webfont-loaded body {
+  font-family: 'Lato', $font-family-base;
+  // http://ffffallback.com/
+  letter-spacing: 0.03em;
+  @include headings(1, 6, true) {
+    font-family: 'Lato', $font-family-base;
+    letter-spacing: 0.03em;
+  }
+}
+
+

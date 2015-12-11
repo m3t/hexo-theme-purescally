@@ -16,7 +16,9 @@
     "html5shiv": "~3.7.3",
     "REM-unit-polyfill": "~1.3.4",
     "yepnope": "~2.0.0",
-    "borderBoxModel": "https://github.com/albertogasparin/borderBoxModel.git"
+    "borderBoxModel": "https://github.com/albertogasparin/borderBoxModel.git",
+    "fontfaceobserver": "~1.6.1",
+    "native-promise-only": "~0.8.0-a"
   },
   "private": true
 }
