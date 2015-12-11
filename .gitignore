@@ -3,3 +3,5 @@ Desktop.ini
 node_modules
 npm-debug.log
 source/vendors/
+source/javascripts/polyfills/polyfills.js
+source/javascripts/polyfills/polyfills-*.js
