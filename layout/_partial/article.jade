@@ -1,14 +1,15 @@
 section(data-ui-component='post').u-s-mb-huge
-    div(data-ui-component='post-meta')
-        !=partial('post/avatar')
-        if post.link || post.title
-            h2.u-s-mb-tiny
-                !=partial('post/title')
-            p.u-text-color-trivial.u-text-size-x-small
-                !=partial('post/date', {date_format: 'YYYY-MM-DD HH:mm'})
-                !=partial('post/category')
-                !=partial('post/tag')
-    hr
+    if meta
+        div(data-ui-component='post-meta')
+            !=partial('post/avatar')
+            if post.link || post.title
+                h2.u-s-mb-tiny
+                    !=partial('post/title')
+                p.u-text-color-trivial.u-text-size-x-small
+                    !=partial('post/date', {date_format: 'YYYY-MM-DD HH:mm'})
+                    !=partial('post/category')
+                    !=partial('post/tag')
+        hr
     div(data-ui-component='post-content').u-s-me-tiny.post-content
         !=partial('post/gallery')
         if post.excerpt && index
